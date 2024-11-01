@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CheckSquare } from 'lucide-react';
 import { TodoItem } from './components/TodoItem';
 import { TodoInput } from './components/TodoInput';
+import Navbar from './components/Navbar';
 
 interface Todo {
   id: string;
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-4">
+      <Navbar />
       <div className="max-w-2xl mx-auto">
         <div className="bg-gray-800 rounded-2xl shadow-xl p-6 md:p-8">
           <div className="flex items-center gap-3 mb-8">
